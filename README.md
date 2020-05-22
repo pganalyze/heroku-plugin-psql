@@ -26,5 +26,5 @@ USAGE
 ```
 <!-- usagestop -->
 
-_See code: [src/commands/psql.ts](https://github.com/pganalyze/heroku-plugin-psql/blob/v0.0.0/src/commands/psql.ts)
+_See code: [src/commands/psql.ts](https://github.com/pganalyze/heroku-plugin-psql/blob/v0.0.0/src/commands/psql.ts)_
 <!-- commandsstop -->
