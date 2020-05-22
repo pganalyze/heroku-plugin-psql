@@ -7,7 +7,6 @@
   "dependencies": {
     "@heroku-cli/color": "^1.1.14",
     "@heroku-cli/command": "^8.3.0",
-    "@heroku-cli/plugin-pg-v5": "^7.41.0",
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@types/debug": "^4.1.5",
