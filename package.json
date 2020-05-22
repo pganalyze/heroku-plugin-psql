@@ -54,7 +54,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "uhoh-itsmaciek/heroku-plugin-psql",
+  "repository": "pganalyze/heroku-plugin-psql",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
