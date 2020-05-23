@@ -47,3 +47,15 @@ EXAMPLE
 
 _See code: [src/commands/psql.ts](https://github.com/pganalyze/heroku-plugin-psql/blob/v0.0.0/src/commands/psql.ts)_
 <!-- commandsstop -->
+
+
+Authors
+-------
+
+ * [Maciek Sakrejda](https://github.com/uhoh-itsmaciek)
+
+
+License
+-------
+
+heroku-plugin-psql is licensed under the MIT license, see LICENSE file for details.
