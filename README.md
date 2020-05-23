@@ -10,7 +10,6 @@ Like heroku pg:psql but for any Postgres database
 
 <!-- toc -->
 * [Usage](#usage)
-* [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
@@ -41,7 +40,7 @@ OPTIONS
 EXAMPLE
   $ heroku psql -a sushi
        DATABASE=> 
-
+...
 ```
 <!-- usagestop -->
 
