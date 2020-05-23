@@ -61,7 +61,7 @@ async function execPsql(url: string, query: string): Promise<string> {
     let result = ''
     debug('Running query: %s', query.trim())
     const psql = spawn('psql', ['-c', query, '--set', 'sslmode=require', url], {
-      env: {PGAPPNAME: 'psql non-interactive'},
+      env: {PGAPPNAME: 'psql non-interactive', PATH: process.env.PATH},
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'inherit'],
     })
@@ -81,7 +81,7 @@ async function execPsqlWithFile(url: string, file: string): Promise<string> {
     let result = ''
     debug('Running sql file: %s', file.trim())
     const psql = spawn('psql', ['-f', file, '--set', 'sslmode=require', url], {
-      env: {PGAPPNAME: 'psql non-interactive'},
+      env: {PGAPPNAME: 'psql non-interactive', PATH: process.env.PATH},
       encoding: 'utf8',
       stdio: ['ignore', 'pipe', 'inherit'],
     })
@@ -117,7 +117,7 @@ async function psqlInteractive(url: string, prompt: string): Promise<void> {
     psqlArgs = psqlArgs.concat(['--set', 'sslmode=require', url])
 
     const psql = spawn('psql', psqlArgs, {
-      env: {PGAPPNAME: 'psql interactive'},
+      env: {PGAPPNAME: 'psql interactive', PATH: process.env.PATH},
       stdio: 'inherit',
     })
     handlePsqlError(reject, psql)
