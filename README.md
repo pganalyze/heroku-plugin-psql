@@ -14,7 +14,7 @@ Like heroku pg:psql but for any Postgres database
 # Usage
 <!-- usage -->
 ```sh-session
-$ yarn add --global heroku-plugin-psql
+$ heroku plugins:install heroku-plugin-psql
 $ heroku psql --app example-app
 --> Connecting to DATABASE_URL
 DATABASE=> help

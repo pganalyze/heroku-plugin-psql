@@ -60,6 +60,7 @@
     "posttest": "eslint . --ext .ts --config .eslintrc",
     "tidy": "eslint . --ext .ts --config .eslintrc --fix",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
-    "test": "nyc --extension .ts mocha --forbid-only \"src/**/*.test.ts\""
+    "test": "nyc --extension .ts mocha --forbid-only \"src/**/*.test.ts\"",
+    "version": "true"
   }
 }
