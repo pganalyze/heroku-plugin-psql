@@ -37,13 +37,17 @@ export default class AppCommand extends Command {
     }
 
     this.log(`--> Connecting to ${color.addon(matchedKey)}`)
-    if (flags.command) {
-      process.stdout.write(await psql.exec(url, flags.command))
-    } else if (flags.file) {
-      process.stdout.write(await psql.execFile(url, flags.file))
-    } else {
-      const name = matchedKey.replace(/_URL$/, '')
-      await psql.interactive(url, name)
+    try {
+      if (flags.command) {
+        process.stdout.write(await psql.exec(url, flags.command))
+      } else if (flags.file) {
+        process.stdout.write(await psql.execFile(url, flags.file))
+      } else {
+        const name = matchedKey.replace(/_URL$/, '')
+        await psql.interactive(url, name)
+      }
+    } catch (error) {
+      this.error(error)
     }
   }
 }
