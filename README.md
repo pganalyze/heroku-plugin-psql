@@ -10,38 +10,19 @@ Like heroku pg:psql but for any Postgres database
 
 <!-- toc -->
 * [Usage](#usage)
-* [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
-$ yarn add --global heroku-plugin-psql
-$ heroku psql --app example-app
---> Connecting to DATABASE_URL
-DATABASE=> help
-You are using psql, the command-line interface to PostgreSQL.
-Type:  \copyright for distribution terms
-       \h for help with SQL commands
-       \? for help with psql commands
-       \g or terminate with semicolon to execute query
-       \q to quit
-DATABASE=> \q
-$ heroku psql --help
-Like heroku pg:psql but for non-Heroku databases
-
+$ npm install -g heroku-plugin-psql
+$ oclif-example COMMAND
+running command...
+$ oclif-example (-v|--version|version)
+heroku-plugin-psql/0.0.4 linux-x64 node-v13.8.0
+$ oclif-example --help [COMMAND]
 USAGE
-  $ heroku psql [DATABASE]
-
-OPTIONS
-  -a, --app=app        (required) app to run command against
-  -r, --remote=remote  git remote of app to use
-  --command=command    like --command (-c) in psql, runs single command and exits
-  --file=file          like --file (-f) in psql, runs commands from a file and exits
-
-EXAMPLE
-  $ heroku psql -a sushi
-       DATABASE=> 
-
+  $ oclif-example COMMAND
+...
 ```
 <!-- usagestop -->
 
