@@ -1,7 +1,7 @@
 {
   "name": "heroku-plugin-psql",
   "description": "Like heroku pg:psql but for any Postgres database",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Maciek Sakrejda @uhoh-itsmaciek",
   "bugs": "https://github.com/pganalyze/heroku-plugin-psql/issues",
   "dependencies": {
